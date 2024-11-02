@@ -178,7 +178,7 @@ def generate_grid_3d(mode, n):
         points = np.column_stack((r * np.sin(theta) * np.cos(phi), r * np.sin(theta) * np.sin(phi), r * np.cos(theta)))
     elif mode == 'uniform':
         step = 2 / (n ** (1/3))
-        # 生成均匀分布的点
+
         points = []
         for i in range(int(n ** (1/3))):
             for j in range(int(n ** (1/3))):
