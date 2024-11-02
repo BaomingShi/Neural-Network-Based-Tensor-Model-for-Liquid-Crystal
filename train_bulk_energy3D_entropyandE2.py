@@ -174,7 +174,7 @@ def generate_grid_3d(mode, n):
         phi = np.random.uniform(0, 2*np.pi, n)
         costheta = np.random.uniform(-1, 1, n)
         theta = np.arccos(costheta)
-        r = np.random.uniform(0, 1, n) ** (1/3)  # 三维球体体积均匀分布的半径
+        r = np.random.uniform(0, 1, n) ** (1/3)  
         points = np.column_stack((r * np.sin(theta) * np.cos(phi), r * np.sin(theta) * np.sin(phi), r * np.cos(theta)))
     elif mode == 'uniform':
         step = 2 / (n ** (1/3))
